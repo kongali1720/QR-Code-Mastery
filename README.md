@@ -50,31 +50,39 @@ This project is **strictly for education and awareness**.
 
 ## 📂 **Repository Structure
 
-```
 
 ## 📸 Visual Previews
-A quick look at the core visual resources included in this repository:
+A quick look at the core visual resources included in this repository.
+These graphics help learners understand QR code behavior, structure, and security risks more clearly.
 
 
 ### 🧩 QR Structure Diagram
-![QR Structure](resources/qr-structure-diagram.png)
+
+A detailed visual breakdown of QR modules, finder patterns, alignment marks, and timing patterns.
+Useful for understanding how scanners interpret each region.
+
 
 
 ### 🛡️ Error Correction Levels
-![Error Correction](resources/qr-error-correction-chart.png)
+A clear comparison of the four error correction levels (L, M, Q, H) and how much data each can recover when damaged or partially obscured
+
 
 
 ### ⚠️ Spoofing vs Legit Comparison
-![Spoofing vs Legit](resources/spoofing-vs-legit-example.png)
-
+A security-focused visual showing how malicious QR codes differ from safe, legitimate ones.
+Great for awareness training and QR phishing detection.
 
 ### 🔍 QR Types Overview
-![QR Types](resources/qr-types-overview.png)
+A side-by-side comparison of QR Code Model 1, Model 2, and Micro QR, including capacity differences.
 
+### 📊 QR Decoding Flow (Scanner Logic)
 
-### 🔄 QR Scan Flow Guide
-![Scan Flow](resources/qr-flow-visual-guide.png)
-```
+A visual guide to how QR readers interpret symbol data—from locating patterns to decoding binary payloads.
+
+### 📝 Note
+
+You can replace these visuals later with higher-resolution versions or custom-designed diagrams.
+
 
 ```bash
 basics/
