@@ -1,0 +1,68 @@
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.units import inch
+
+filepath = "/mnt/data/qr_cheat_sheet.pdf"
+
+styles = getSampleStyleSheet()
+story = []
+
+content = """
+# QR Code Cheat Sheet
+
+## 1. QR Code Components
+- Finder Patterns (3 corners)
+- Alignment Pattern
+- Timing Pattern
+- Data Modules
+- Format & Version Information
+
+## 2. Error Correction Levels
+- L (7% recovery)
+- M (15% recovery)
+- Q (25% recovery)
+- H (30% recovery)
+
+## 3. QR Code Versions
+- Version 1–40
+- Higher version = higher data capacity
+
+## 4. Encoding Modes
+- Numeric
+- Alphanumeric
+- Byte
+- Kanji
+
+## 5. Security Tips
+- Always preview URLs before opening
+- Avoid scanning unknown public QR codes
+- Use trusted scanner apps
+- Beware of sticker overlays
+
+## 6. Legit vs Spoofed QR Indicators
+- Misaligned sticker on top of printed code
+- Suspicious domain or redirects
+- Unusual colors or patterns
+- QR placed in unusual locations
+
+## 7. Best Practices for Creating Safe QR Codes
+- Use HTTPS URLs
+- Add branding or logo
+- Keep high contrast (dark on light)
+- Test across multiple devices
+"""
+
+for line in content.split("\n"):
+    if line.startswith("#"):
+        style = styles['Heading1'] if line.startswith("# ") else styles['Heading2']
+        text = line.lstrip("# ").strip()
+        story.append(Paragraph(text, style))
+    else:
+        story.append(Paragraph(line, styles['BodyText']))
+    story.append(Spacer(1, 0.15*inch))
+
+doc = SimpleDocTemplate(filepath, pagesize=letter)
+doc.build(story)
+
+filepath
