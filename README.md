@@ -1,12 +1,27 @@
 # 🌐 QR Code Mastery – Complete GitHub Repository Setup
 
 <p align="center">
+  <!-- Core Badges -->
   <img src="https://img.shields.io/badge/Topic-QR%20Code%20Learning-purple?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Focus-Security%20%26%20Education-blue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Contributions-Welcome-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge" />
   <img src="https://komarev.com/ghpvc/?username=kongali1720&style=for-the-badge" />
+
+  <!-- Interactive Demo -->
+  <a href="https://kongali1720.github.io/<repo>/interactive/">
+    <img src="https://img.shields.io/badge/Interactive-Demo-green?style=for-the-badge" alt="Interactive Demo" />
+  </a>
+
+  <!-- Expanded Features -->
+  <img src="https://img.shields.io/badge/Built%20With-HTML%20%7C%20CSS%20%7C%20JS-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Docs-Complete-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Safe%20Learning-Security%20Focused-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Includes-Visual%20Resources-9cf?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Has-GIF%20Demo-ff69b4?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/GitHub%20Pages-Live-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Community-Friendly-green?style=for-the-badge" />
 </p>
 
 ---
