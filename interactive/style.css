@@ -1,0 +1,33 @@
+:root{
+  --bg:#f7f8fb; --card:#fff; --muted:#6b7280; --accent:#0ea5a4; --text:#0f172a;
+}
+[data-theme="dark"]{ --bg:#071023; --card:#07172a; --muted:#95a3b8; --accent:#22d3ee; --text:#e6f3ff; }
+
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; background:var(--bg); color:var(--text); line-height:1.5}
+.container{max-width:960px;margin:0 auto;padding:24px}
+.hero{padding:28px 0 12px;background:linear-gradient(90deg,rgba(14,165,164,0.06),transparent);border-bottom:1px solid rgba(0,0,0,0.04)}
+.hero h1{margin:0 0 8px;font-size:1.6rem}
+.lead{color:var(--muted); margin:0 0 12px}
+.controls{display:flex;gap:8px;flex-wrap:wrap}
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;border:none;cursor:pointer}
+.btn.outline{background:transparent;border:1px solid rgba(0,0,0,0.08);color:var(--text)}
+.btn.subtle{background:transparent;color:var(--muted);border:1px dashed rgba(0,0,0,0.06)}
+.card{background:var(--card);padding:18px;border-radius:12px;margin-top:18px;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:12px}
+.thumb{cursor:pointer;text-align:center}
+.thumb img{width:100%;height:140px;object-fit:cover;border-radius:8px;border:1px solid rgba(0,0,0,0.05)}
+.thumb figcaption{font-size:0.85rem;color:var(--muted);margin-top:8px}
+.gif-wrap img{max-width:100%;border-radius:10px;border:1px solid rgba(0,0,0,0.06)}
+.small{max-width:520px}
+.footer{padding:18px 0;color:var(--muted);text-align:center}
+.footer a.footer-link{color:var(--accent);text-decoration:none}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);z-index:90}
+.lightbox img{max-width:90%;max-height:80vh;border-radius:8px;box-shadow:0 18px 50px rgba(2,6,23,0.6)}
+.lb-close{position:fixed;top:28px;right:28px;background:transparent;border:none;color:#fff;font-size:28px;cursor:pointer}
+.lb-caption{color:#fff;margin-top:12px;text-align:center}
+
+/* responsive */
+@media (max-width:520px){ .controls{flex-direction:column;align-items:flex-start} .thumb img{height:120px} }
