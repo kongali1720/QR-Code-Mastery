@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QR Code Interactive — Cheat Sheet & Visuals</title>
+
+  <!-- Badges (copy into README too if you want) -->
+  <!-- Badge: Interactive Demo -->
+  <!-- <img src="https://img.shields.io/badge/Interactive-Demo-green?style=for-the-badge" alt="Interactive Demo"> -->
+
+  <link rel="stylesheet" href="./style.css" />
+  <!-- Feather icons for lightweight icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>QR Code Interactive — Cheat Sheet & Visuals</h1>
+      <p class="lead">Interactive viewer: diagrams, GIF demo, downloadable PDF, and quick tips for safe QR usage.</p>
+      <div class="controls">
+        <a id="downloadPdf" class="btn" href="../resources/qr_cheat_sheet.pdf" download>Download Cheat Sheet (PDF)</a>
+        <button id="copyLink" class="btn outline">Copy Page Link</button>
+        <button id="toggleTheme" class="btn subtle">Toggle Dark</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="visuals" class="card">
+      <h2>Visual Previews</h2>
+      <p>Click any image to open a larger preview.</p>
+
+      <div class="gallery">
+        <figure class="thumb">
+          <img src="../resources/qr-structure-diagram.png" alt="QR Structure" data-full="../resources/qr-structure-diagram.png">
+          <figcaption>QR Structure Diagram</figcaption>
+        </figure>
+
+        <figure class="thumb">
+          <img src="../resources/qr-error-correction-chart.png" alt="Error Correction" data-full="../resources/qr-error-correction-chart.png">
+          <figcaption>Error Correction Levels</figcaption>
+        </figure>
+
+        <figure class="thumb">
+          <img src="../resources/spoofing-vs-legit-example.png" alt="Spoofing vs Legit" data-full="../resources/spoofing-vs-legit-example.png">
+          <figcaption>Spoofing vs Legit</figcaption>
+        </figure>
+
+        <figure class="thumb">
+          <img src="../resources/qr-types-overview.png" alt="QR Types" data-full="../resources/qr-types-overview.png">
+          <figcaption>QR Types Overview</figcaption>
+        </figure>
+
+        <figure class="thumb">
+          <img src="../resources/qr-flow-visual-guide.png" alt="Scan Flow" data-full="../resources/qr-flow-visual-guide.png">
+          <figcaption>Scan Flow Guide</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="gif-demo" class="card">
+      <h2>QR Scan Demo</h2>
+      <p>Short GIF demonstrating detection → alignment → decoding.</p>
+      <div class="gif-wrap">
+        <img src="../resources/qr-scan-demo.gif" alt="QR Scan Demo GIF" id="demoGif">
+      </div>
+    </section>
+
+    <section id="how-to" class="card">
+      <h2>How to Use These Visuals</h2>
+      <ul>
+        <li><strong>QR Structure:</strong> Use in slides to explain module positions.</li>
+        <li><strong>Error Correction:</strong> Show reliability trade-offs L/M/Q/H.</li>
+        <li><strong>Spoofing vs Legit:</strong> Train staff to visually inspect codes.</li>
+        <li><strong>Types Overview:</strong> Compare Model 1/2 and Micro QR.</li>
+        <li><strong>Scan Flow:</strong> Use GIF for live demonstrations.</li>
+      </ul>
+    </section>
+
+    <section id="notes" class="card small">
+      <h3>Quick Tips</h3>
+      <ol>
+        <li>Always preview URLs before opening.</li>
+        <li>Prefer HTTPS links in QR codes.</li>
+        <li>Check for sticker overlays or tampering.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" title="Close (Esc)">&times;</button>
+    <img id="lightbox-img" src="" alt="Preview">
+    <div class="lb-caption"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <small>© 2025 kongali1720 — QR Code Learning · Interactive Demo</small>
+      <div class="footer-actions">
+        <a class="footer-link" href="../README.md">Back to README</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script>feather.replace()</script>
+</body>
+</html>
