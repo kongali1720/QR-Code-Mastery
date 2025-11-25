@@ -33,9 +33,35 @@ This project is **strictly for education and awareness**.
 
 ---
 
-## 📂 **Folder Structure**
+## 📂 **Repository Structure
 
 ```
+
+## 📸 Visual Previews
+A quick look at the core visual resources included in this repository:
+
+
+### 🧩 QR Structure Diagram
+![QR Structure](resources/qr-structure-diagram.png)
+
+
+### 🛡️ Error Correction Levels
+![Error Correction](resources/qr-error-correction-chart.png)
+
+
+### ⚠️ Spoofing vs Legit Comparison
+![Spoofing vs Legit](resources/spoofing-vs-legit-example.png)
+
+
+### 🔍 QR Types Overview
+![QR Types](resources/qr-types-overview.png)
+
+
+### 🔄 QR Scan Flow Guide
+![Scan Flow](resources/qr-flow-visual-guide.png)
+```
+
+```bash
 basics/
   ├── how-qr-works.md
   ├── data-structure.md
@@ -55,11 +81,6 @@ examples/
   ├── CODE_OF_CONDUCT.md
   ├── ISSUE_TEMPLATE.md
   └── PULL_REQUEST_TEMPLATE.md
-
-LICENSE
-CONTRIBUTING.md
-SECURITY.md
-README.md
 ```
 
 ---
